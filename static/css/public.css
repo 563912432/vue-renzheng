@@ -1,0 +1,778 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "MicroSoft YaHei";
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.mb-5{
+    margin-bottom: 5px;
+}
+.mr-5{
+    margin-right: 5px;
+}
+.mr-10{
+    margin-right: 10px !important;
+}
+.ml-5{
+    margin-left: 5px;
+}
+.ml-20{
+    margin-left: 20px;
+}
+.ml-25{
+    margin-left: 25px;
+}
+.mt-5{
+    margin-top: 5px;
+}
+.mt-10{
+    margin-top: 10px !important;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+}
+.row-top-blue{
+    width: 4px;
+    height: 20px;
+    background-color: #16307a;
+    float:left;
+}
+.row-top-text{
+    float: left;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+/*公用样式*/
+.bg-f {
+    background-color: #fff;
+}
+
+.bg-green {
+    /*background-color: #01c8a9;*/
+    /*background-color: #32ADF3;*/
+    background: #26a2fb;
+    background: -webkit-linear-gradient(60deg,#26a2fb,#5ed6d7);
+    background: -o-linear-gradient(60deg,#26a2fb,#5ed6d7);
+    background: -moz-linear-gradient(60deg,#26a2fb,#5ed6d7);
+    background: linear-gradient(60deg,#26a2fb,#5ed6d7);
+}
+
+.f-l {
+    float: left;
+}
+.f-r {
+    float: right;
+}
+
+.o-f {
+    overflow: hidden;
+}
+
+.clear {
+    clear: both;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-24 {
+    font-size: 24px;
+}
+
+.color_1 {
+    color: #bbb;
+}
+
+.color_2 {
+    color: #888;
+}
+
+.color_3 {
+    color: #d75452;
+}
+
+.color_4 {
+    color: #468cc8;
+}
+
+.color_5 {
+    color: #60b761;
+}
+
+.color_6 {
+    color: #004a83;
+}
+
+.button {
+    display: inline-block;
+    border-radius: .2em;
+    padding: .4em 1.5em;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.button-blue {
+    color: #fff;
+    background: #15acee;
+    border-color: #15acee;
+    border-radius: 20px;
+}
+
+.button-blue:hover {
+    background: #3dc0f9;
+}
+
+.button-green {
+    color: #fff;
+    background: #17cacb;
+    border-color: #17cacb;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.button-green:hover {
+    background: #04b8b9;
+}
+
+.button-red {
+    color: #fff;
+    background: #d9534f;
+    border-color: #d43f3a;
+}
+
+.button-red:hover {
+    background: #d43f3a;
+}
+
+.button-white {
+    background-color: #EBEBEB;
+    color: #333;
+    border-color: #ccc;
+}
+
+.height30 {
+    line-height: 30px;
+}
+
+.height40 {
+    line-height: 40px;
+}
+
+.height50 {
+    line-height: 50px;
+}
+
+.pad15_r {
+    padding-right: 15px;
+}
+
+.pad30_r {
+    padding-right: 30px;
+}
+
+.pd-vertical-10 {
+    padding: 17px 0;
+}
+
+.mg-right-5 {
+    margin-right: 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.input_1 {
+    background: #fff;
+    padding: 0px 5px;
+    border: 1px solid #888;
+    width: 130px;
+    height: 28px;
+    line-height: 28px;
+}
+
+/*--------------------------------------登录页面--------------------------------------------*/
+.kp-wrap {
+    background-color: #ffffff;
+    min-height: 100%;
+}
+
+.width-1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.width-48{
+    width: 48%;
+}
+
+.login-head {
+    height: 120px;
+    /*padding-top: 10px;*/
+}
+
+.city-name {
+    position: absolute;
+    font-size: 30px;
+    font-style: italic;
+    top: 29px;
+    left: 490px;
+}
+
+/*导航菜单样式*/
+.ribbon, .ribbon span {
+    display: inline-block
+}
+
+.ribbon {
+    margin-top: 20px
+}
+
+.ribbon:after, .ribbon:before {
+    margin-top: .5em;
+    content: "";
+    float: left;
+    border: 1.5em solid #f8f8f8
+}
+
+.ribbon:after {
+    border-right-color: transparent
+}
+
+.ribbon:before {
+    border-left-color: transparent
+}
+
+.ribbon a:link, .ribbon a:visited {
+    color: #000;
+    text-decoration: none;
+    float: left;
+    height: 3.5em;
+    overflow: hidden
+}
+
+.ribbon span {
+    background: #f8f8f8;
+    line-height: 3em;
+    padding: 0 1em;
+    margin-top: .5em;
+    position: relative;
+    -webkit-transition: background-color .2s, margin-top .2s;
+    -moz-transition: background-color .2s, margin-top .2s;
+    -ms-transition: background-color .2s, margin-top .2s;
+    -o-transition: background-color .2s, margin-top .2s;
+    transition: background-color .2s, margin-top .2s
+}
+
+.ribbon span:after, .ribbon span:before {
+    content: "";
+    position: absolute;
+    top: 3em;
+    border-bottom: .5em solid #fff
+}
+
+.ribbon a:hover span {
+    background: #b745c8;
+    margin-top: 0;
+    color: #fff
+}
+
+.ribbon a.lczy:hover span {
+    background: #62ca9f
+}
+
+.ribbon a.jchj:hover span {
+    background: #4ca8fd
+}
+
+.ribbon a.sjgg:hover span {
+    background: #456ac8
+}
+
+.ribbon a.cjwt:hover span {
+    background: #fe9381
+}
+
+.ribbon a.czsc:hover span {
+    background: #f2be56
+}
+
+.ribbon span:before {
+    left: 0;
+    border-right: .5em solid #9B8651
+}
+
+.ribbon span:after {
+    right: 0;
+    border-left: .5em solid #9B8651
+}
+
+/*登录框样式*/
+.login-cont {
+    height: 520px;
+}
+
+.login_main {
+    height: 467px;
+}
+
+.login_box {
+    width: 440px;
+    position: absolute;
+    right: 50px;
+    top: 55px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.sub_1, .sub_2 {
+    border: none;
+    width: 281px;
+    height: 37px;
+    padding: 5px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.sub_1 {
+    width: 100%;
+    height: 48px;
+    background: #1f75f6 !important;
+    border-radius: 0px !important;
+    font-size: 18px !important;
+}
+.sub_1:hover{
+    background-color: #40a8ff !important;
+}
+
+.sub_2 {
+    background: #cbcbcb;
+    cursor: default
+}
+
+.login_input{
+    height: 48px;
+    line-height: 48px;
+}
+.login_input input{
+    height: 48px !important;
+    line-height: 48px !important;
+    /*border: 1px solid #A9A9A9;*/
+    border-radius: 2px;
+}
+
+
+.mbbox {
+    width: 100%;
+    height: 80px;
+    line-height: 50px;
+    border-radius: 4px;
+}
+
+.mbbox .hover, .mbbox li {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.mbbox li {
+    float: left;
+    display: block;
+    margin-right: 0;
+    background: #ededed;
+    color: #333333;
+}
+
+.mbbox .hover {
+    background: #ffffff;
+    color: #333333;
+    font-size: 24px;
+    border-radius: 4px;
+}
+
+
+.login_word {
+    font-size: 12px;
+    line-height: 30px
+}
+
+.login_word a, .login_word a:hover {
+    text-decoration: underline
+}
+
+.login_word a {
+    color: #03F
+}
+
+.login_word a:hover {
+    color: red
+}
+
+.login-footer {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.login-footer div {
+    line-height: 30px;
+}
+
+a.button-green span {
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    display: inline-block;
+    padding: 0.3em 1.5em;
+    background-size: 3px 3px;
+    color: #fff;
+}
+
+/*--------------------------------------首页--------------------------------------------*/
+
+.logo {
+    height: 68px;
+    margin: 9px 20px;
+}
+
+.user {
+    margin: 20px 20px 0 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+.user a {
+    color: #fff;
+}
+
+.nav {
+    background: #06b398;
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+}
+
+.nav li a {
+    float: left;
+    padding: 0 30px;
+    border-right: 1px solid #06a088;
+    color: #fff;
+}
+
+.nav li a.select, .nav li a:hover, .nav li a:focus {
+    background: #069B84;
+    font-weight: 700;
+    color: #0efed9;
+}
+
+.content {
+    min-height: 600px;
+}
+
+.breadCrumb {
+    padding: 10px;
+    padding-left: 50px;
+}
+
+.breadCrumb a {
+    color: #333;
+}
+
+.breadCrumb a:hover {
+    color: #01c8a9;
+}
+
+.w-title {
+    height: 80px;
+    /*padding-left: 30px;*/
+    font-size: 24px;
+    line-height: 80px;
+    /*color: #fff;*/
+}
+
+.standard{
+    width: 1200px;
+    margin: 0px auto !important;
+}
+
+.cl-888{
+    color: #888888;
+}
+
+.w-bottom {
+    height: 22px;
+}
+
+.footer {
+    padding: 30px 0;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+
+.T-title {
+    margin: 20px 0 10px 0;
+    padding: 0 0 6px;
+    border-bottom: 1px dotted #888;
+    font-weight: 600;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+.slide {
+    border-bottom-color: rgb(238, 238, 238);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    position: relative;
+}
+
+.btn-slide {
+    padding: 2px 10px 1px 0px;
+    top: -22px;
+    width: 110px;
+    height: 20px;
+    text-align: center;
+    right: 0px;
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+}
+
+.btn-slide:hover {
+    color: #01c8a9;
+}
+
+.active {
+    background-position: right -51px;
+}
+
+label.pad15_r {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.page {
+    height: 35px;
+    line-height: 35px;
+}
+
+.page ul li {
+    float: left;
+}
+
+.page ul li a {
+    display: block;
+    background-color: #EBEBEB;
+    padding: 0px 15px;
+    margin: 0 1px;
+    color: #333;
+}
+
+a.button-green:hover, a.button-red:hover, a.button-blue:hover {
+    color: #fff;
+}
+
+.container2 {
+    background: #f9f9f9;
+    padding: 30px 40px 30px 50px;
+    border-top: 5px solid #62A647;
+}
+
+.label_txt {
+    background-color: #f9f9f9;
+    border-width: 0 0 1px;
+    border-style: none none dotted;
+    border-color: currentColor currentColor #aaa;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.label_name {
+    width: 85px;
+    font-size: 16px;
+    font-weight: normal;
+    display: inline-block;
+}
+
+.container2 hr {
+    height: 1px;
+    border-top: 1px solid #aaa;
+    margin: 0 0 5px;
+}
+
+.container2 h2 {
+    font-size: 1.5em;
+}
+
+.out {
+    border-top: 7em solid #56627F;
+    border-left: 20em solid #fff;
+    position: relative;
+}
+
+.resultTable {
+    border: 1px solid #333;
+}
+
+.out em {
+    left: -270px;
+    top: -4em;
+    font-style: normal;
+    display: block;
+    position: absolute;
+}
+
+.out b {
+    top: -4em;
+    left: -65px;
+    position: absolute;
+    display: block;
+}
+
+th {
+    text-align: center;
+}
+
+.resulttable > tbody > tr > th {
+    background-color: #56627F;
+    color: #fff;
+}
+
+.tbbox {
+    height: 80px;
+    line-height: 80px;
+    background-color: #F7F7F7;
+}
+
+.tbbox ul li {
+    float: left;
+    width: 165px;
+    text-align: center;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.tbbox ul li.hover {
+    background-color: #56627F;
+    color: #fff;
+}
+
+.theme-poptit {
+    padding: 10px;
+    border-bottom-color: #ddd;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    position: relative;
+}
+
+.theme-popbod {
+    padding: 20px 15px;
+    color: #444;
+}
+
+.summaryInfo {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    line-height: 20px;
+    padding: 10px 30px;
+    margin: 20px 13px 10px 5px;
+}
+
+.summaryInfo label {
+    font-weight: normal;
+}
+
+.resulttable td {
+    text-align: center;
+}
+.chose-trade{
+    padding: 0 10px 20px;
+    display: none;
+}
+.chose-trade .trade{
+    width: 100%;
+    margin-top: 15px;
+}
+.chose-trade .layui-btn+.layui-btn{
+    margin-left: 0;
+}
+.do-next{
+    width: 113px;
+    height: 75px;
+    position: fixed;
+    right: -45px;
+    bottom: 100px;
+    cursor: pointer;
+    z-index: 100;
+}
+.do-next:hover{
+    right: 0px;
+}
+.chose-trade{
+    padding: 20px;
+    display: none;
+}
+.chose-trade .am-btn-block+.am-btn-block {
+    margin-top: 15px; !important;
+}
+.watch_content{
+    margin: 10px;
+    padding: 10px;
+    display: none;
+}
+.watch_content p{
+    margin: 10px;
+}
+.watch_content table{
+    border-collapse: collapse
+}
