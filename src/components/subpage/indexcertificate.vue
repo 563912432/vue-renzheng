@@ -13,11 +13,11 @@
       <div class="w-title">
         <p class="float-left">
           当前税款所属期：
-          <span class="col-red">2019年12月</span>
+          <span class="col-red">{{taxdate}}</span>
           <span class="col-hui fs-18">（当期可勾选、确认截止日期为：{{tax_deadline}}）</span>
         </p>
         <p class="float-right fs-18">
-          年度：2019
+          年度：2020
         </p>
       </div>
       <div class="w-content" v-show="conShow">
@@ -114,6 +114,7 @@
           [{month: 9}, {month: 10}, {month: 11}, {month: 12}]
         ],
         com: {},
+        taxdate: '',
         numTotal: 0, // 已确认的发票数量
         tax_moneyTotal: 0, //税额合计
         timeMonth: 12, // 时间轴内选中的月份
@@ -126,11 +127,18 @@
       this.synchronizeComInfo()
       this.tax_deadline = this.conversionTime(this.com.tax_deadline)
       this.statisticsInvoice()
+      this.setMonth(this.conversionTime(this.com.tax_time))
     },
     methods: {
       // 选择月
       selectMonth(month) {
         this.timeMonth = month
+      },
+      // 获取当前申报月份
+      setMonth(res) {
+        var time = res.split('-') // 拆解完毕后是  年  月  日
+
+        this.taxdate = time[0] + '年' + time[1] + '月'
       },
       // 统计已认证发票信息
       statisticsInvoice() {

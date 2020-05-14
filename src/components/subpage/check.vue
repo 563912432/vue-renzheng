@@ -478,9 +478,9 @@
             // 确定该发票属于抵扣已勾选
             if(!invoiceData[i].deduction && invoiceData[i].check_state === '1') {
               if(this.invoiceSelect.indexOf(invoiceData[i].id) === -1) {
-                this.invoiceCheckListInfo.sum_amount = this.changeTwoDecimal_f(Number(this.invoiceCheckListInfo.sum_amount) + Number(this.invoiceData[i].money))
-                this.invoiceCheckListInfo.sum_tax = this.changeTwoDecimal_f(Number(this.invoiceCheckListInfo.sum_tax) + Number(this.invoiceData[i].tax_money))
-                this.invoiceCheckListInfo.sum_effective_tax = this.changeTwoDecimal_f(Number(this.invoiceCheckListInfo.sum_effective_tax) + Number(this.invoiceData[i].declare_tax_money))
+                this.invoiceCheckListInfo.sum_amount = this.changeTwoDecimal_f(Number(this.invoiceCheckListInfo.sum_amount) - Number(this.invoiceData[i].money))
+                this.invoiceCheckListInfo.sum_tax = this.changeTwoDecimal_f(Number(this.invoiceCheckListInfo.sum_tax) - Number(this.invoiceData[i].tax_money))
+                this.invoiceCheckListInfo.sum_effective_tax = this.changeTwoDecimal_f(Number(this.invoiceCheckListInfo.sum_effective_tax) - Number(this.invoiceData[i].declare_tax_money))
                 sum++
                 this.cancelSelect.push(invoiceData[i].id)
               }
@@ -492,6 +492,14 @@
           } else {
             this.invoiceChecksDialog = true // 弹窗开启
           }
+        }
+      },
+      initInvoiceCheckListInfo() {
+        this.invoiceCheckListInfo = {
+          sum: 0, // 已勾选发票总数量
+          sum_amount: 0, // 金额合计
+          sum_tax: 0, // 合计税额
+          sum_effective_tax: 0 // 有效税额合计
         }
       },
       // 确认勾选

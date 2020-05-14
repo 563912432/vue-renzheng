@@ -32,7 +32,7 @@
             <el-menu-item index="2-3">
               <a class="color-black" :href="[urlType == 0 ? 'javascript:;' : '#/home/deduction']"><div>发票不抵扣勾选</div></a>
             </el-menu-item>
-            <el-menu-item index="2-4">预期发票抵扣勾选</el-menu-item>
+            <el-menu-item index="2-4">逾期发票抵扣勾选</el-menu-item>
             <el-menu-item index="2-5">出口转内销发票勾选</el-menu-item>
             <el-menu-item index="2-6">
               <a class="color-black" :href="[urlType == 0 ? 'javascript:;' : '#/home/count']"><div>抵扣勾选统计</div></a>
@@ -92,6 +92,7 @@
       },
       // 退出系统
       toAbort() {
+        // 清一下数据
         this.$router.push('/')
       }
     }
